@@ -442,7 +442,7 @@ def mundo_EC_repetitivas_ejercicios():
     print(' ')
     print('Felicitaciones, usted ha completado el mundo de los strings')
     
-    def listas():
+def listas():
     print(" ")
     print("!!!!!!!!!!!!!!!!!!!")
     print(" ")
