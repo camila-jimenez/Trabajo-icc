@@ -177,3 +177,269 @@ def mundo_variables_valores():
     print(" Para continuar presione cualquier tecla" )
     x = input()
     print(mundo_variables_valores_ejericios())
+def mundo_variables_valores_ejericios(): # ejerciio con contador
+    nota=0
+    while nota==0:
+        print(" Pregunta 1: cual es la diferencia entre un integer y un float?" )
+        print(" A: el integer es un valor decimal mientras que el float es entero" )
+        print(" B: el integer es un valor entero mientras que el float es decimal" )
+        print(" C: el integer es un texto mientras que el float es un número" )
+        print(" D: el integer es un valor entero mientras que el float es un texto" )
+        p1=input(" ingrese la letra de su respuesta por favor:" )
+        if p1 == "B" or p1== "b":
+            nota = nota+1
+            print(" Correcto!!!, presione cualquier tecla para continuar a la siguiente pregunta" )
+            f=input()
+        else:
+            print(" UF, casi, sigue intentando. Presiona cualquier tecla para seguir a la siguiente pregunta:" )
+            x=input()
+        print(" Pregunta 2: Se pueden operar o juntar valores string con integers o floats?" )
+        print(" A: Sí, ya que python entiende todo lo que ponga en las variables y solo lo junta" )
+        print(" B: No, porque las oraciones tienen espacios y los números no " )
+        print(" c: Sí, ya que las letras y los numeros juntos poseen valores dentro de python" )
+        print(" D: No, ya que las letras y los números no estan en el mismo idioma ya que las letras son texto y los numeros se entienden como valores numericos" )
+        p2=input(" ingrese la letra de su respuesta por favor:" )
+        if p2 == "D" or p2== "d":
+            nota = nota + 1
+            print(" Correcto!!!, presione cualquier tecla para continuar a la siguiente pregunta" )
+            f=input()
+        elif p2!=2:
+            print(" UF, casi, sigue intentando. Presiona cualquier tecla para seguir a la siguiente pregunta:" )
+            x=input()
+        if nota ==2:
+                print(" Correcto!!!, presione cualquier tecla para continuar a la siguiente pregunta" )
+        elif nota<=1:
+                print(" UFFF!!!, casi, intentalo una vez mas " )
+                nota=0
+
+def mundo_variables_operadores():
+    print(" Las variables como fue mencionado antes, pueden tener valores de una operación aritmética tal como sumas restas etc")
+    print("  " )
+    print(" Por ejemplo si se escribe que X = 3 y W = 4, también se puede crear una variable T = X + W, lo cual resultaría en 7 " )
+    print("  ")
+    print(" De la misma manera, se pueden utilizar mas Artificios matemáticos para operaciones aritméticas, te invitamos que utilices tu inteprete de preferencia y pruebes el ejemplo anterior" )
+    print(" No tengas miedo de modificar la fórmula, utiliza si deseas los artificios que desees. A continuación te mostraremos mas de estos, y como se ven en el computador:" )
+    print(" Para continuar presione cualquier tecla" )
+    x = input()
+    Artificios=[["+", 'suma'],["-",'resta'],["/",'división'],["", 'multiplicación'],["*",'potencia']]
+    print(Artificios)
+    print(" Si uno desea trabajar con aún mas operadores matemáticos, se puede importar una librería" )
+    print(" La librería es un repertorio de comandos extra, que mediante el prefijo import. puedes incluirla. En este caso, se utilizaria import.cmath. Recuerda que es importante importarla al inicio de tu programa" )
+    print("  " )
+    print(" Ahora que ya sabes más acerca de los operadores y operaciones que puedes realizar con las variables, intenta hacer algunos ejercicios propuestos" )
+    print(mundo_variables_operadores_ejercicios())
+    print("  ")
+
+
+def mundo_variables_operadores_ejercicios():
+    print(" Puede practicar este tema abriendo pycharm o el intérprete de su preferencia para realizar los siguientes ejercicio" )
+    print(" El primer ejercicio es:" )
+    print(" Cual sería la altura promedio de Luis, Juan y Ana; si se sabe que miden 1.83m, 1.70m y 1.64m respectivamente? " )
+    print(" Consejo: utilize diferentes variables para los diferentes valores" )
+    x = input((" Para verificar si su código  funciona, puede ver la respuesta modelo. Presione R para ver la respuesta, o qualuier otra tecla para seguir a la siguiente parte del castillo:" ))
+    if x== "R":
+        print('Se utilizan 4 variables, una para cada amigo, y una para la operación aritmética')
+        print(" L=1.83" )
+        print(" J=1.70" )
+        print(" A=1.64" )
+        print(" Promedio=(L+J+A)/3 " )
+        print("ojo, las variables pueden ser palabras también, no te limites a una sola letra")
+
+
+def mundo_variables_funciones():
+    print(" Usted se preguntara 'como hago que el usuario utilize o interactue con mi programa?'" )
+    print(" Bueno, a continuación le enseñaremos cómo. Esto se logra con el comando input() " )
+    print(" input(), le permite al usuario que cuando se corra el programa, le permita ingresar un int (integer), strin o float." )
+    print(" Para seguir aprendiendo presione cualquier tecla: " )
+    x = input()
+    print(" Por lo general, para poder trabajar con el valor del usuario, se le asgina ese valor de input() a una variable" )
+    print(" Por ejemplo, X= input(). Algo que hay que saber, es que al solo poner input(), no saldrá ningún mensaje a parte, por lo que esto puede confundir al usuario" )
+    print(" ya que no existe ningún aviso que le notifique que tiene que ingresar información. Esto se logra poniendo un mensaje dentro del input()" )
+    print(" utilizando el ejemplo anterior: X=input('por favor ingrese la información' )" )
+    print(" Para seguir aprendiendo presione cualquier tecla: ")
+    x = input()
+    print(" Hay algo muy importante que se tiene que saber, cuando el usuario ingresa un dato o valor mediante input(), el programa siempre lo va a entender como texto" )
+    print(" por lo que si ese valor fuera un valor, no podria operarlo, ya que lo comprende como texto." )
+    print(" para poder cambiar esto, vamos a utilizar una herramienta que se llama enmascarar. Al enmascarar, le especificamos a la computadora que entienda el dato ingresado como nostros queremos" )
+    print(" Para seguir aprendiendo presione cualquier tecla: " )
+    x = input()
+    print(" Los inputs se pueden enmascarar como ints, strings, y floats. esto se logra de la siguiente manera:" )
+    print(" se tiene la variable X=int(input('ingrese la data por favor'))" )
+    print("  como se en este caso estamos haciendo que cuando el usuario ingrese el valor para la varibale X, el programa entienda como valor numérico el input()" )
+    print(" Ahora intentaremos un ejercio, Buena Suerte!!!!!!" )
+    print(mundo_variables_funciones_ejercicios())
+
+
+def mundo_variables_funciones_ejercicios():
+    print(" Para este ejercicio, se le pedirá escribir un programa que halle el promedio de alturas de usted y 3 amigos" )
+    print(" Ojo, a diferencia del último problema no se le esta dando las alturas de las personas " )
+    x = input((" Para verificar si su código  funciona, puede ver la respuesta modelo. Presione R para ver la respuesta, o qualuier otra tecla para seguir a la siguiente parte del castillo:" ))
+    if x== "R":
+        print(" Se utilizan 4 variables, una para cada amigo con un input enmascarado, y una para la operación aritmética")
+        print(" U=int(input('ingrese su altura:'))" )
+        print(" A1=int(input('ingrese la altura del primer amigo:'))" )
+        print(" A2=int(input('ingrese la altura del segundo amigo:'))" )
+        print(" A3=int(input('ingrese la altura del tercer amigo:'))" )
+        print(" Promedio=(A1+A2+A3+U)/4 " )
+        print(" print(Promedio)" )
+    print(" Felicidades, usted ha acabado el Castillo de las Variables!!!" )
+
+def estructuras_control():
+    print(" ")
+    print('Bienvenido al castillo Estructuras de control')
+    print(' ')
+    print('En este castillo aprenderas sobre las estructuras de control')
+    print(' ')
+    print('Las estructuras de control permiten modificar el flujo de las instrucciones de un programa')
+    print(' ')
+    print('Para seguir aprendiendo presione cualquier tecla: ')
+    x = input()
+    print(' ')
+    print(mundo_EC_selectivas())
+    print(mundo_EC_repetitivas())
+    x = input()
+    print(' ')
+    print("Continuemos...")
+
+def mundo_EC_selectivas():
+    print('Las estructuras de control selectivas son los comandos "if" y "else"')
+    print('Para poder entender mejor las estructuras de control selectivo utilizaremos ejemplos: ')
+    print('El primer ejemplo que se utilizara sera el siguiente:')
+    print(
+        'Si un valor dado es menor a 18 se imprima la frase "Es menor de edad" y si es mayor o igual a 18 imprima la frase "Es mayor de edad"')
+    print('Para este ejemplo se utilizaria la siguiente estructura:'
+          'x=int(input())'
+          'if x<18:'
+          '    print("Es menor de edad")'
+          'else: '
+          '    print("Es mayor de edad")')
+    print(
+        'En este ejemplo si "x" es un numero menor a 18 se cumple la condicion, por lo que se hace lo que esta dentro de ese bloque y luego se detiene el programa')
+    print(
+        'Si "x" es mayor a 18 no cumple la primera condicion, por lo que pasa a la siguiente condicion y hace lo que esta dentro de ese bloque, y se detiene')
+    print('Para seguir aprendiendo presione cualquier tecla: ')
+    x = input()
+    print(' ')
+    print('Tambien hay estructuras de multiples opciones')
+    print('Esto se da cuando se tiene una estructura de control dentro de una estructura de control')
+    print(
+        'Por ejemplo, un programa en el cual si un numero es mayor o igual a 5 imprima "NC", pero si es menor a 5 que identifique si es par, e imprima "P", o si es impar, e imprima "I')
+    print('Para este ejemplo se utilizaria la siguiente estructura:')
+    print('x=int(input())')
+    print('if x>=5:')
+    print('    print("NC")')
+    print('else: ')
+    print('    if x%2==0:')
+    print('        print("P")')
+    print('    if x%2 != 0:')
+    print('        print("I")')
+    print('Para seguir aprendiendo presione cualquier tecla: ')
+    x = input()
+    print(' ')
+    print(
+        'En este ejemplo si "x" es un numero mayor a 5 cumple la primera condicion, por lo que hace lo que esta dentro de ese bloque')
+    print(
+        'Si "x" es un numero menor a 5 no cumple la primera condicion, por lo que va a la siguiente estructura de control')
+    print(
+        'En la segunda estructura de control esta anliza si "x" es un numero par para cumplir lo que este dentro de ese bloque')
+    print('Si no cumple lo que esta dentro de ese bloque pasa a la siguiente EC')
+    print('Para seguir aprendiendo presione cualquier tecla: ')
+    x = input()
+    print(' ')
+    print(mundo_EC_selectivas_ejercicios())
+
+
+def mundo_EC_selectivas_ejercicios():
+    print(
+        'Puede practicar este tema abriendo pycharm o el intérprete de su preferencia e intentar los siguientes ejercicio')
+    print('El primer ejercicio es:')
+    print('Escriba un programa el cual cumpla las siguientes condiciones:')
+    print('Acepte un numero entero')
+    print('Si el numero entero es mayor o igual que 6 imprima "Pasaste", y si es menor a 6 que imprima "Jalaste"')
+    print('Para seguir aprendiendo presione cualquier tecla: ')
+    x = input()
+    print(' ')
+    print('El segundo ejercicio es:')
+    print('Escriba un programa el cual cumpla con las siguientes condiciones:')
+    print('Acepte un numero entero')
+    print('Si el numero es mayor o igual a 50 que imprima "Esta jubilado", si es menor a 50 que cree una EC multiple')
+    print('Si es mayor o igual a 18 que imprima "Estudia/Trabaja" y si es menor a 18 que imprima "Sigue en el colegio"')
+    print('Para seguir aprendiendo presione cualquier tecla: ')
+    x = input()
+    print(' ')
+
+
+def mundo_EC_repetitivas():
+    print('Las estructuras de control repetitivas son los comandos "while" y "for"')
+    print('El comando while funciona como un bucle, este se repetira siempre y cuando su condicion sea verdadera')
+    print('Para seguir aprendiendo presione cualquier tecla: ')
+    x = input()
+    print(' ')
+    print(
+        'Por ejemplo, si quisieramos imprimir un numero del 1 al 9 linea por linea lo hariamos de la siguiente manera: ')
+    print('k = 1')
+    print('#Utilizamos a k como contador para que el bucle termine en algun punto')
+    print('while k < 10:')
+    print('    print(k)')
+    print('    k+=1')
+    print('Para seguir aprendiendo presione cualquier tecla: ')
+    x = input()
+    print(' ')
+    print('El comando for funciona tambien como un bucle, sin embargo esta puede aplicarse en un rango o en una cadena')
+    print(
+        'El comando for cuando se usa en un rango se puede aplicar de la siguiente manera "for i in range(start,stop,step):"')
+    print('Para seguir aprendiendo presione cualquier tecla: ')
+    x = input()
+    print(' ')
+    print(
+        'Por ejemplo para hacer un programa que imprima los numeros del 5 al -7 en intervalos de -2 se haria de la siguiente manera')
+    print('for i in range(5,-8,-2):')
+    print('    print(i)')
+    print('Recordar que se imprime hasta un numero antes de donde se detiene')
+    print('Para seguir aprendiendo presione cualquier tecla: ')
+    x = input()
+    print(' ')
+    print('Como se menciono antes, tambien se puede utilizar la EC en una cadena, por ejemplo')
+    print(
+        'Si se quisiese contar la cantidad de veces que se repite un caracter en una cadena se haria de la siguiente manera: ')
+    print('Por ejemplo, la cantidad de veces que se repite la letra "e" en la frase "estructura repetitiva')
+    print('k=0')
+    print('for i in "estructura repetitiva":')
+    print('    if i=="e":')
+    print('        k+=1')
+    print('"k"')
+    print('Para seguir aprendiendo presione cualquier tecla: ')
+    x = input()
+    print(' ')
+    print(
+        'Otro de los comandos que se puede utilizar en las EC es el comando break, el cual se utiliza para terminar un bucle si se cumple una condicion')
+    print('Por ejemplo un programa en el que cuente cuantas veces se repite "a" en la frase "alameda arboleda"')
+    print('Pero si en la frase hay un " " que se pare el contador')
+    print('k=0')
+    print('for i in "alameda arboleda":')
+    print('    if i=="a":')
+    print('        k+=1')
+    print('    if i==" ":')
+    print('        break')
+    print('Para seguir aprendiendo presione cualquier tecla: ')
+    x = input()
+    print(' ')
+    print(mundo_EC_repetitivas_ejercicios())
+
+
+def mundo_EC_repetitivas_ejercicios():
+    print('Puede practicar este tema abriendo pycharm o el intérprete de su preferencia e intentar los siguientes ejercicio')
+    print('El primer ejercicio es:')
+    print('Escriba un programa el cual cumpla las siguientes condiciones:')
+    print('Acepte una frase')
+    print('Si la frase tiene mas de 2 "a" imprima "aleluya", pero si tiene una "e" pare el programa e imprima "ehh"')
+    print('Para seguir aprendiendo presione cualquier tecla: ')
+    x = input()
+    print(' ')
+    print('Escriba un programa el cual cumpla las siguientes condiciones:')
+    print('Acepte un numero')
+    print('Imprima "" por lineas, hasta que imprima la cantidad del numero que ingreso de "", en forma de piramide')
+    print('Para seguir aprendiendo presione cualquier tecla: ')
+    x = input()
+    print(' ')
+    print('Felicitaciones, usted ha completado el mundo de los strings')
