@@ -5,7 +5,7 @@ def main():
     print("1: Sí")
     print("0: No")
     print(" ")
-    respuesta=input("-> ")
+    respuesta=input("->  ")
     if respuesta=="1" or respuesta=="si" or respuesta=="Sí" or respuesta=="sí":
         usuario_nuevo()
     else:
@@ -52,6 +52,7 @@ def usuario_nuevo():
     print(" ")
     tecla = input()
     final()
+    
 def select_menu():
     print(" ")
     print("¡Oh! Ya recuerdo...")
