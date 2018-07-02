@@ -976,5 +976,291 @@ def mundo_EC_repetitivas_ejercicios():
     x = input()
     print(' ')
     print("Continuemos...")
-    
+    def funciones():
+    print(" ")
+    print('Bienvenido al castillo funciones ')
+    print(' ')
+    print('En este castillo aprenderás sobre las funciones')
+    print(' ')
+    print(
+        'Las funciones son un conjunto de instrucciones que realizan alguna tarea determinada, las cuales pueden ser invocadas por el programa más de una vez')
+    print(
+        'Las funciones son muy practicas ya que te pueden ahorrar tiempo cuando diseñas un programa y tienes que repetir constantemente una operacion o secuencia de pasos ')
+    print('estas se construyen con el prefijo def [nombre de la función]() ')
+    print(' ')
+    print('Para seguir aprendiendo presione cualquier tecla: ')
+    x = input()
+    print(' ')
+    print(mundo_funciones_valores())  #
+    print(mundo_funciones_operadores_y_operaciones())  # poner las operaciones aritmeticas básicas como sumas etc, y  e import math
+
+def mundo_funciones_valores():
+    print('Las funciones nos ayudan, estas pueden devolver un valor como tambien pueden no devolver nada')
+    print('para crear una función se escribe def despues el nombre de la función y después el paréntesis, el cuál lleva el valor que va a utilizar')
+    print('hay que entender las funciones de computación son como las que se encuentran en matemática')
+    print('Se le ingresa un valor, y esta lo modifica (por lo general)')
+    print('un ejemplo de función que retorna un valor es la función por default sort(), a la que ingresas valores y los ordena')
+    print('mientras que una función que no devuelve ningún valor sería una función que siempre imprime lo mismo')
+    print('ahora pasaremos a algunas preguntas')
+    x = input()
+    print(mundo_funciones_valores_ejericios())
+
+    print('Digamos que queremos hacer una función para hallar la nota promedio')
+    print(' utilizamos def promedio() y definimos las notas ')
+
+def mundo_funciones_valores_ejericios(): # ejerciio con contador
+    nota=0
+    while nota==0:
+        print('Pregunta 1: cuál es el objetivo de una función?')
+        print('A: Que sea funciónal y divertida')
+        print('B: que se pueda volver a invocar constantement ahorrar tiempo e y')
+        print('c: Almacenar información ordenadamente ')
+        print('D: Hacer que las variables cambien')
+        p1=input('ingrese la letra de su respuesta por favor:')
+        if p1 == "B" or p1 == "b":
+            nota = nota + 1
+            print('Correcto!!!, presione cualquier tecla para continuar a la siguiente pregunta')
+            f=input()
+        else:
+            print('UF, casi, sigue intentando. Presiona cualquier tecla para seguir a la siguiente pregunta:')
+            x=input()
+        print('Pregunta 2: qué se ponen dentro de los paréntesis?')
+        print('A: Para hacer espacio')
+        print('B: para definir la función ')
+        print('c: para escribir')
+        print('D: para ingresar el valor que la función va a utilizar')
+        p2=input('ingrese la letra de su respuesta por favor:')
+        if p2 == D or p2== d:
+            nota = nota + 1
+            print('Correcto!!!, presione cualquier tecla para continuar a la siguiente pregunta')
+            f=input()
+        else:
+            print('UF, casi, sigue intentando. Presiona cualquier tecla para seguir a la siguiente pregunta:')
+            x=input()
+        if nota ==2:
+                print('Correcto!!!, presione cualquier tecla para continuar a la siguiente pregunta')
+        elif nota<=1:
+                print('UFFF!!!, casi, intentalo una vez mas ')
+                nota=0
+
+def mundo_funciones_operadores_y_operaciones():
+    print('Ahora, veremos como construir paso a paso una variable.')
+    print('Vamos a construir una función que halle el valor promedio de valores de una lista')
+    print('en principio tenemos nuestra lista valores=[2,4,6]')
+    print ('escribimos:')
+    print('def promedio(lista):')
+    print('suma=0')
+    print('for valor in lista:')
+    print('suma=suma+valor')
+    print('media=suma/(len(lista)')
+    print('print("La media es: ", media)')
+    x = input()
+    print('como se ve, la función por dentro, es como una operación relativamente simple, la cual se va a repetir')
+    print('cada vez que se la convoque. se la convocara cada vez que se escriba promedio(), y dentro de los parentesis se encuentre una lista')
+    print('por ejemplo, promedio(valores)')
+
+    print(mundo_funciones_operadores_ejercicios())
+    print(' ')
+
+
+def mundo_funciones_operadores_ejercicios():
+    print('Puede practicar este tema abriendo pycharm o el intérprete de su preferencia para realizar los siguientes ejercicio')
+    print('El primer ejercicio es:')
+    print('escribir un programa que utilize función que calcule el área de cualquier círculo, que le requiera al usuario')
+    print('sólo la medida del radio, sabiendo que el area de un círculo es π x radio al cuadrado')
+    print('Consejo: utilize la fórmula ofrecida para construir la función')
+    x = input(('Para verificar si su código  funcióna, puede ver la respuesta modelo. Presione R para ver la respuesta, o qualuier otra tecla para seguir a la siguiente parte del castillo:'))
+    if x== R:
+        '''
+        def area_circular():
+            π=3.14
+            radio= int(input("ingrese el radio del circulo a caluclar:"))
+            Area= π*(radio**2)
+            print(Area)
+        '''
+
+
+def strings():
+    print(" ")
+    print("Bienvenido al castillo STRING")
+    print(' ')
+    print('En este castillo aprenderas sobre los strings')
+    print(' ')
+    print('Un string es una cadena de caracteres que puede ser almacenada como una constante')
+    print('Pero tambien puede ser almacenada como una variable')
+    print(' ')
+    print('Para seguir aprendiendo presione cualquier tecla: ')
+    x = input()
+    print(' ')
+    print(mundo_string_valores())
+    print(mundo_string_operadores())
+    print(mundo_string_funciones())
+    x = input()
+    print(' ')
+    print("¡Eso sí que fue una travesía!")
+
+def mundo_string_valores():
+    print('Para aprender a programar con strings primero utilizaremos un ejemplo con valores')
+    print('En este ejemplo utilizaremos el string "Este programa es genial"')
+    string_ejemplo = "Este programa es genial"
+    print('Este string lo almacenaremos en la variable "string_ejemplo"')
+    print('Para ver la longitud del string utiliza la funcion "len()"')
+    print('Por ejemplo: len(string_ejemplo) = ', len(string_ejemplo))
+    print(' ')
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print('Para poder imprimir algun caracter de este string utilizamos "string[x]"')
+    print(' ')
+    print('#Recordemos que en python la cuenta empieza desde 0')
+    print(' ')
+    print('Por ejemplo, si quisieramos imprimir el primer y octavo caracter lo hariamos de la siguiente manera: ')
+    print('print(string_ejemplo[0]) y print(string_ejemplo[7]), y a esto obtendriamos: ', string_ejemplo[0] + string_ejemplo[7])
+    print(' ')
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print('Para poder imprimir hasta algun caracter utilizamos la funcion "string[:x]"')
+    print('Por ejemplo, si quisieramos imprimir hasta el octavo caracter del string lo hariamos de la siguiente manera: ')
+    print('print(string_ejemplo[:8]) y ante esto obtendriamos: ', string_ejemplo[:8])
+    print(' ')
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print('Para poder imprimir entre dos caracteres utilizamos la funcion "string[x:y]"')
+    print('Por ejemplo, si quisieramos impriir del segundo al octavo caracter lo hariamos de la siguiente manera: ')
+    print('print(string_ejemplo[1:8])y ante esto obtendriamos: ', string_ejemplo[1:8])
+    print(' ')
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print('Y lo que usamos para imprimir del segundo al quinto caracter y del octavo al treceavo caracter usamos: ')
+    print('string_ejemplo[1:5] + string_ejemplo[7:13] = ', string_ejemplo[1:5] + string_ejemplo[7:13])
+    print(' ')
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print('Para imprimir con intervalos utilizamos la "funcion string[::x]"')
+    print('Por ejemplo, si quisieramos hacer un intervalo de dos caracteres lo hariamos de la siguiente manera: ')
+    print('print(string_ejemplo[::2] y ante esto obtendriamos: ', string_ejemplo[::2])
+    print(' ')
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print('Ahora que ya sabes la teoria de los strings, realiza unos ejercicios para demostrar tus conocimientos')
+    print(mundo_string_valores_ejericios())
+
+
+def mundo_string_valores_ejericios():
+    print('Puede practicar este tema abriendo pycharm o el intérprete de su preferencia e intentar los siguientes ejercicio')
+    print('El primer ejercicio es:')
+    print('Del refran "Al que madruga Dios lo ayuda"')
+    print('1. Imprime la letras del refran una por linea')
+    print('2. Imprime las letras del refran empezando desde la ultima letra hacia la primera letra, una por linea')
+    print('3. Imprime la cantidad de letras que tiene el refran')
+
+
+def mundo_string_operadores():
+    print('Para aprender a programar con python los operadores de strings usaremos el siguiente ejemplo: "Hola profesor"')
+    print('El operador "%d" nos permite ingresar un numero entero')
+    print('El operador "%s" nos permite ingresar una cadena')
+    print('El operador "%f" nos permite ingresar un punto flotante (%.2f es para dos decimales)')
+    print(' ')
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print('Si utilizamos la siguiente operacion texto = "%d Hola %.1f profesor%s%(3, 0.5, "Julian")"')
+    print('Si ahora utilizamos la funcion "print(texto)" se imprimira lo siguiente: ')
+    texto = '%d Hola %.1f profesor %s'%(3, 0.5, 'Julian')
+    print(texto)
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print('Ahora que ya conoces los operadores utilizemos algunos ejemplos: ')
+    print(' ')
+    print(mundo_string_operadores_ejercicios())
+    print(' ')
+
+def mundo_string_operadores_ejercicios():
+    print('Puede practicar este tema abriendo pycharm o el intérprete de su preferencia e intentar los siguientes ejercicio')
+    print('El primer ejercicio es:')
+    print('De la frase "de mis amigos "')
+    print('Utilizando operadores imprima "2 de mis amigos en 0.5"')
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print(' ')
+
+def mundo_string_funciones():
+    print('Para aprender a programar con python las funciones de los string usaremos el siguiente ejemplo: "El valor de pi es: "')
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print('La primera funcion es "str()" que se utiliza para asignarle a un numero la propiedad de una cadena')
+    print('Por ejemplo primero le asignaremos un valor a pi, pi = 3.14, y luego para imprimir un texto con pi usaremos: ')
+    pi = 3.14
+    print('El valor de pi es:  + str(pi)')
+    print('A lo que obtendremos: ', 'El valor de pi es: ', str(pi))
+    print(' ')
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print('Otra funcion que es la funcion ".join()"')
+    print('Por ejemplo para unir una cadena con un caracter elegido, por ejemplo')
+    print('Para separar la frase por espacios utilizamos print(" ".join("El valor de pi es: "))')
+    print('A lo que obtenemos: ')
+    print(" ".join("El valor de pi es: "))
+    print(' ')
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print('Otra funcion que se puede utilizar es la funcion ".find()"')
+    print('Por ejemplo para hallar "pi" en la frase utilizamos "El valor de pi es: ".find("pi")')
+    print('A lo que obtenemos la posicion en donde se encuentra pi: ')
+    print('El valor de pi es: '.find('pi'))
+    print(' ')
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print('Sin embargo, si el texto no se encuentra en la cadena se imprimira "-1"')
+    print('Por ejemplo, al buscar su amor en la frase "El valor de pi"')
+    print('Si escribimos "El valor de pi".find("Su amor")')
+    print('Obtenemos: ')
+    print("El valor de pi".find("Su amor"))
+    print(' ')
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print('Otra funcion es ".replace()"')
+    print('Por ejemplo, para reemplazar "pi" por "h" utilizamos "El valor de pi es: ".replace("pi", "h")')
+    print('A lo que obtenemos: ')
+    print("El valor de pi es: ".replace("pi", "h"))
+    print(' ')
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print('Otras funciones son: ')
+    print('".capitalize()", la cual se utiliza para poner en mayuscula el primer caracter de un texto')
+    print('".lower()", la cual se utiliza para poner en minuscula un texto')
+    print('".upper()", la cual se utiliza para poner en mayuscula un texto')
+    print('".strip()", la cual se utiliza para eliminar los espacios en blanco de un texto')
+    print(' ')
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print(mundo_string_funciones_ejercicios())
+
+
+def mundo_string_funciones_ejercicios():
+    print('Puede practicar este tema abriendo pycharm o el intérprete de su preferencia e intentar los siguientes ejercicio')
+    print('El primer ejercicio es:')
+    print('De la frase "Hola amigo"')
+    print('Utilizando funciones imprima: ')
+    print('1. Separe la frase con "+"')
+    print('2. Encuentre en que valor se encuentra "amigo" y donde se encuentra "usted"')
+    print('3. Reemplace "amigo" por "perro"')
+    print('Para continuar presione cualquier tecla')
+    x = input()
+    print('Felicitaciones, usted ha completado el mundo de los strings')
+
+def final():
+    print(" ")
+    print("Esperamos verte de nuevo en la siguiente versión :D")
+    print(" ")
+    print("Integrantes del equipo:")
+    print(" ")
+    print("Edgardo Bravo")
+    print("Rodrigo Gallegos")
+    print("Camila Jiménez")
+    print(" ")
+    print("¡GRACIAS!")
+
+titulo = "EL MUNDO DE PYTHON"
+print(titulo.center(150, " "))
+print(" ")
+main()
     
