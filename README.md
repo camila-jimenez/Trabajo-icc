@@ -167,12 +167,10 @@ def mundo_variables_valores():
     print("  " )
     print(" Para continuar presione cualquier tecla" )
     x = input()
-
     print(" Las variables pueden tomar  3 formas principales, números enteros, conocidos como 'integers', abreviados int; números decimales, conocidos como 'floats', y texto conocido como string")
     print(" Por ejemplo, variables con este tipo de valores : X=3, W= hola, F=7.6" )
     print(" Las variables, como se vera más adelante, serviran para almacenar información la cual se puede utilizar en operaciones matemáticas." )
     print(" Es importante saber que los valores entre las Categorias presentadas (string e integers) no pueden sumarse ni operarse, ya que uno se entiende como texto y otro como numero" )
-
     print(" Para continuar presione cualquier tecla" )
     x = input()
     print(mundo_variables_valores_ejericios())
@@ -229,7 +227,6 @@ def mundo_variables_operadores():
     print(mundo_variables_operadores_ejercicios())
     print("  ")
 
-
 def mundo_variables_operadores_ejercicios():
     print(" Puede practicar este tema abriendo pycharm o el intérprete de su preferencia para realizar los siguientes ejercicio" )
     print(" El primer ejercicio es:" )
@@ -243,8 +240,7 @@ def mundo_variables_operadores_ejercicios():
         print(" A=1.64" )
         print(" Promedio=(L+J+A)/3 " )
         print("ojo, las variables pueden ser palabras también, no te limites a una sola letra")
-
-
+        
 def mundo_variables_funciones():
     print(" Usted se preguntara 'como hago que el usuario utilize o interactue con mi programa?'" )
     print(" Bueno, a continuación le enseñaremos cómo. Esto se logra con el comando input() " )
@@ -267,7 +263,6 @@ def mundo_variables_funciones():
     print("  como se en este caso estamos haciendo que cuando el usuario ingrese el valor para la varibale X, el programa entienda como valor numérico el input()" )
     print(" Ahora intentaremos un ejercio, Buena Suerte!!!!!!" )
     print(mundo_variables_funciones_ejercicios())
-
 
 def mundo_variables_funciones_ejercicios():
     print(" Para este ejercicio, se le pedirá escribir un programa que halle el promedio de alturas de usted y 3 amigos" )
@@ -321,8 +316,7 @@ def mundo_EC_selectivas():
     print(' ')
     print('Tambien hay estructuras de multiples opciones')
     print('Esto se da cuando se tiene una estructura de control dentro de una estructura de control')
-    print(
-        'Por ejemplo, un programa en el cual si un numero es mayor o igual a 5 imprima "NC", pero si es menor a 5 que identifique si es par, e imprima "P", o si es impar, e imprima "I')
+    print('Por ejemplo, un programa en el cual si un numero es mayor o igual a 5 imprima "NC", pero si es menor a 5 que identifique si es par, e imprima "P", o si es impar, e imprima "I')
     print('Para este ejemplo se utilizaria la siguiente estructura:')
     print('x=int(input())')
     print('if x>=5:')
@@ -335,12 +329,9 @@ def mundo_EC_selectivas():
     print('Para seguir aprendiendo presione cualquier tecla: ')
     x = input()
     print(' ')
-    print(
-        'En este ejemplo si "x" es un numero mayor a 5 cumple la primera condicion, por lo que hace lo que esta dentro de ese bloque')
-    print(
-        'Si "x" es un numero menor a 5 no cumple la primera condicion, por lo que va a la siguiente estructura de control')
-    print(
-        'En la segunda estructura de control esta anliza si "x" es un numero par para cumplir lo que este dentro de ese bloque')
+    print('En este ejemplo si "x" es un numero mayor a 5 cumple la primera condicion, por lo que hace lo que esta dentro de ese bloque')
+    print('Si "x" es un numero menor a 5 no cumple la primera condicion, por lo que va a la siguiente estructura de control')
+    print('En la segunda estructura de control esta anliza si "x" es un numero par para cumplir lo que este dentro de ese bloque')
     print('Si no cumple lo que esta dentro de ese bloque pasa a la siguiente EC')
     print('Para seguir aprendiendo presione cualquier tecla: ')
     x = input()
@@ -349,8 +340,7 @@ def mundo_EC_selectivas():
 
 
 def mundo_EC_selectivas_ejercicios():
-    print(
-        'Puede practicar este tema abriendo pycharm o el intérprete de su preferencia e intentar los siguientes ejercicio')
+    print('Puede practicar este tema abriendo pycharm o el intérprete de su preferencia e intentar los siguientes ejercicio')
     print('El primer ejercicio es:')
     print('Escriba un programa el cual cumpla las siguientes condiciones:')
     print('Acepte un numero entero')
@@ -374,8 +364,7 @@ def mundo_EC_repetitivas():
     print('Para seguir aprendiendo presione cualquier tecla: ')
     x = input()
     print(' ')
-    print(
-        'Por ejemplo, si quisieramos imprimir un numero del 1 al 9 linea por linea lo hariamos de la siguiente manera: ')
+    print('Por ejemplo, si quisieramos imprimir un numero del 1 al 9 linea por linea lo hariamos de la siguiente manera: ')
     print('k = 1')
     print('#Utilizamos a k como contador para que el bucle termine en algun punto')
     print('while k < 10:')
@@ -385,13 +374,11 @@ def mundo_EC_repetitivas():
     x = input()
     print(' ')
     print('El comando for funciona tambien como un bucle, sin embargo esta puede aplicarse en un rango o en una cadena')
-    print(
-        'El comando for cuando se usa en un rango se puede aplicar de la siguiente manera "for i in range(start,stop,step):"')
+    print('El comando for cuando se usa en un rango se puede aplicar de la siguiente manera "for i in range(start,stop,step):"')
     print('Para seguir aprendiendo presione cualquier tecla: ')
     x = input()
     print(' ')
-    print(
-        'Por ejemplo para hacer un programa que imprima los numeros del 5 al -7 en intervalos de -2 se haria de la siguiente manera')
+    print('Por ejemplo para hacer un programa que imprima los numeros del 5 al -7 en intervalos de -2 se haria de la siguiente manera')
     print('for i in range(5,-8,-2):')
     print('    print(i)')
     print('Recordar que se imprime hasta un numero antes de donde se detiene')
@@ -399,8 +386,7 @@ def mundo_EC_repetitivas():
     x = input()
     print(' ')
     print('Como se menciono antes, tambien se puede utilizar la EC en una cadena, por ejemplo')
-    print(
-        'Si se quisiese contar la cantidad de veces que se repite un caracter en una cadena se haria de la siguiente manera: ')
+    print('Si se quisiese contar la cantidad de veces que se repite un caracter en una cadena se haria de la siguiente manera: ')
     print('Por ejemplo, la cantidad de veces que se repite la letra "e" en la frase "estructura repetitiva')
     print('k=0')
     print('for i in "estructura repetitiva":')
@@ -410,8 +396,7 @@ def mundo_EC_repetitivas():
     print('Para seguir aprendiendo presione cualquier tecla: ')
     x = input()
     print(' ')
-    print(
-        'Otro de los comandos que se puede utilizar en las EC es el comando break, el cual se utiliza para terminar un bucle si se cumple una condicion')
+    print('Otro de los comandos que se puede utilizar en las EC es el comando break, el cual se utiliza para terminar un bucle si se cumple una condicion')
     print('Por ejemplo un programa en el que cuente cuantas veces se repite "a" en la frase "alameda arboleda"')
     print('Pero si en la frase hay un " " que se pare el contador')
     print('k=0')
@@ -1055,10 +1040,8 @@ def mundo_funciones_operadores_y_operaciones():
     print('como se ve, la función por dentro, es como una operación relativamente simple, la cual se va a repetir')
     print('cada vez que se la convoque. se la convocara cada vez que se escriba promedio(), y dentro de los parentesis se encuentre una lista')
     print('por ejemplo, promedio(valores)')
-
     print(mundo_funciones_operadores_ejercicios())
     print(' ')
-
 
 def mundo_funciones_operadores_ejercicios():
     print('Puede practicar este tema abriendo pycharm o el intérprete de su preferencia para realizar los siguientes ejercicio')
@@ -1075,8 +1058,7 @@ def mundo_funciones_operadores_ejercicios():
             Area= π*(radio**2)
             print(Area)
         '''
-
-
+        
 def strings():
     print(" ")
     print("Bienvenido al castillo STRING")
@@ -1149,7 +1131,6 @@ def mundo_string_valores_ejericios():
     print('1. Imprime la letras del refran una por linea')
     print('2. Imprime las letras del refran empezando desde la ultima letra hacia la primera letra, una por linea')
     print('3. Imprime la cantidad de letras que tiene el refran')
-
 
 def mundo_string_operadores():
     print('Para aprender a programar con python los operadores de strings usaremos el siguiente ejemplo: "Hola profesor"')
@@ -1230,7 +1211,6 @@ def mundo_string_funciones():
     print('Para continuar presione cualquier tecla')
     x = input()
     print(mundo_string_funciones_ejercicios())
-
 
 def mundo_string_funciones_ejercicios():
     print('Puede practicar este tema abriendo pycharm o el intérprete de su preferencia e intentar los siguientes ejercicio')
