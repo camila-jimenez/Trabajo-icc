@@ -976,16 +976,14 @@ def mundo_EC_repetitivas_ejercicios():
     x = input()
     print(' ')
     print("Continuemos...")
-    def funciones():
+def funciones():
     print(" ")
     print('Bienvenido al castillo funciones ')
     print(' ')
     print('En este castillo aprenderás sobre las funciones')
     print(' ')
-    print(
-        'Las funciones son un conjunto de instrucciones que realizan alguna tarea determinada, las cuales pueden ser invocadas por el programa más de una vez')
-    print(
-        'Las funciones son muy practicas ya que te pueden ahorrar tiempo cuando diseñas un programa y tienes que repetir constantemente una operacion o secuencia de pasos ')
+    print('Las funciones son un conjunto de instrucciones que realizan alguna tarea determinada, las cuales pueden ser invocadas por el programa más de una vez')
+    print('Las funciones son muy practicas ya que te pueden ahorrar tiempo cuando diseñas un programa y tienes que repetir constantemente una operacion o secuencia de pasos ')
     print('estas se construyen con el prefijo def [nombre de la función]() ')
     print(' ')
     print('Para seguir aprendiendo presione cualquier tecla: ')
